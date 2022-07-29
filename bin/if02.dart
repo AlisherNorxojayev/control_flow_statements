@@ -8,7 +8,7 @@
         a: a increased by 1 if positive, else decreased by 2.*/
 
 void main() {
-  print(func(5));
+  print(func(4));
 }
 
 int func(int number) {
