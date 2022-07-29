@@ -11,4 +11,26 @@
     Returns:
         string: the message to print */
 
-void main() {}
+void main() {
+  func(20);
+}
+
+int func(int number) {
+  if (number ~/ 10 < 10) {
+    if (number % 2 == 0) {
+      print("two-digit even number");
+    }
+    if (number % 2 != 0) {
+      print("two-digit odd number");
+    }
+  }
+  if (number ~/ 10 >= 10) {
+    if (number % 2 == 0) {
+      print("three-digit even number");
+    }
+    if (number % 2 != 0) {
+      print("three-digit odd number");
+    }
+  }
+  return 0;
+}
