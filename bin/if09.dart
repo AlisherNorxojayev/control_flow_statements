@@ -10,4 +10,16 @@
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False. */
 
-void main() {}
+void main() {
+  print(func(14));
+}
+
+int func(int number) {
+  if (number >= number % 10 * 10 + number ~/ 10) {
+    print(true);
+  }
+  if (number < number % 10 * 10 + number ~/ 10) {
+    print(false);
+  }
+  return 0;
+}
